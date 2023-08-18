@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="shortcut icon" href="imgs/icon9.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="vh-100 p-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="title animate__animated animate__pulse ">
+            <h1 class="mx-auto mb-5 px-5 py-2 rounded-3  border border-2 text-white ">Quiz</h1>
+        </div>
+        <div class="row justify-content-center w-100">
+            <div class="col-lg-8 col-xxl-5">
+                <section class="options animate__animated animate__zoomIn text-center">
+                    <!--?Category -->
+                    <div class="form-floating mb-4">
+                        <select class="form-select" id="category" aria-label="Floating label select example">
+                            <option selected value="">Any Category</option>
+                            <option value="9">General Knowledge</option>
+                            <option value="10">Books</option>
+                            <option value="11">Film</option>
+                            <option value="12">Music</option>
+                            <option value="13">Musicals & Theatres</option>
+                            <option value="14">Television</option>
+                            <option value="15">Video Games</option>
+                            <option value="16">Board Games</option>
+                            <option value="17">Science & Nature</option>
+                            <option value="18">Science: Computers</option>
+                            <option value="19">Science: Mathematics</option>
+                            <option value="20">Mythology</option>
+                            <option value="21">Sports</option>
+                            <option value="22">Geography</option>
+                            <option value="23">History</option>
+                            <option value="24">Politics</option>
+                            <option value="25">Art</option>
+                            <option value="26">Celebrities</option>
+                            <option value="27">Animals</option>
+                            <option value="28">Vehicles</option>
+                            <option value="29">Comics</option>
+                            <option value="30">Science: Gadgets</option>
+                            <option value="31">Japanese Anime & Manga</option>
+                            <option value="32">Cartoon & Animations</option>
+                        </select>
+                        <label for="floatingSelect">Choose Category</label>
+                    </div>
+                    <!--?Diff -->
+                    <div class="form-floating mb-4">
+                        <select class="form-select" id="diff" aria-label="Floating label select example">
+                            <option value="" selected>Random</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        <label for="floatingSelect">Choose Difficulty Level</label>
+                    </div>
+                    <div class="form-floating mb-5">
+                        <input type="number" class="form-control" id="numQ">
+                        <label for="floatingSelect">Number Of Questions</label>
+                    </div>
+                    <small class="hint mb-4 d-none">Please Fill Numbers Of Questions</small>
+                    <button class="btn  me-auto text-white w-50 py-2 rounded-4" id="start">Start</button>
+                </section>
+
+                <section class="questions text-center bg-white rounded-3 p-3"></section>
+                <section class="result text-center bg-white rounded-3 p-3">
+                    <div class="content fs-1 mb-3"></div>
+                    <button id="tryAgain" class="btn text-white"><i class="fa fa-repeat"></i> Try Again</button>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
