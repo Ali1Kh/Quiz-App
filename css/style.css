@@ -56,3 +56,8 @@ body {
     border-color: red !important;
     color: white !important;
 }
+@media screen and (0px < width <= 576px) {
+.ans {
+width:100% !important;
+}
+}
