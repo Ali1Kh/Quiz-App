@@ -13,26 +13,29 @@
 </head>
 
 <body>
-    <main class="vh-100 p-5 d-flex flex-column justify-content-center align-items-center">
+    
+  <main class=" p-5 d-flex flex-column justify-content-center align-items-center" style="
+    height: 90vh !important;
+">
+        
         <div class="title animate__animated animate__pulse ">
             <h1 class="mx-auto mb-5 px-5 py-2 rounded-3  border border-2 text-white ">Quiz</h1>
-        </div>
-        <div class="row justify-content-center w-100">
+        </div><div class="row justify-content-center w-100">
             <div class="col-lg-8 col-xxl-5">
                 <section class="options animate__animated animate__zoomIn text-center">
                     <!--?Category -->
                     <div class="form-floating mb-4">
                         <select class="form-select" id="category" aria-label="Floating label select example">
-                            <option selected value="">Any Category</option>
+                            <option selected="" value="">Any Category</option>
                             <option value="9">General Knowledge</option>
                             <option value="10">Books</option>
                             <option value="11">Film</option>
                             <option value="12">Music</option>
-                            <option value="13">Musicals & Theatres</option>
+                            <option value="13">Musicals &amp; Theatres</option>
                             <option value="14">Television</option>
                             <option value="15">Video Games</option>
                             <option value="16">Board Games</option>
-                            <option value="17">Science & Nature</option>
+                            <option value="17">Science &amp; Nature</option>
                             <option value="18">Science: Computers</option>
                             <option value="19">Science: Mathematics</option>
                             <option value="20">Mythology</option>
@@ -46,15 +49,15 @@
                             <option value="28">Vehicles</option>
                             <option value="29">Comics</option>
                             <option value="30">Science: Gadgets</option>
-                            <option value="31">Japanese Anime & Manga</option>
-                            <option value="32">Cartoon & Animations</option>
+                            <option value="31">Japanese Anime &amp; Manga</option>
+                            <option value="32">Cartoon &amp; Animations</option>
                         </select>
                         <label for="floatingSelect">Choose Category</label>
                     </div>
                     <!--?Diff -->
                     <div class="form-floating mb-4">
                         <select class="form-select" id="diff" aria-label="Floating label select example">
-                            <option value="" selected>Random</option>
+                            <option value="" selected="">Random</option>
                             <option value="easy">Easy</option>
                             <option value="medium">Medium</option>
                             <option value="hard">Hard</option>
@@ -82,7 +85,9 @@
 
 
     </main>
-
+<div class="footer text-center">
+            <h6 class="mx-auto mb-5 text-white mt-auto">Made With ❤️ By Ali Elssadany</h6>
+        </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/index.js" type="module"></script>
